@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>McKain Lab · Lab Tools</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --evergreen: #002400; --forest: #273b09; --olive: #4a6320;
+  --teal: #007A62; --bg: #f4f6f2; --card: #ffffff;
+  --border: #d7e0d3; --text: #12210f; --muted: #5c6b58; --amber: #b07a10;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+body { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; }
+.header { background: var(--evergreen); color: #fff; padding: 26px 16px 22px; }
+.wrap { max-width: 860px; margin: 0 auto; }
+.eyebrow { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: #2fd0ad; margin-bottom: 6px; }
+h1 { font-size: 24px; font-weight: 650; }
+.sub { color: #a9c2b2; font-size: 14px; margin-top: 6px; line-height: 1.5; }
+main { padding: 26px 16px 40px; }
+h2 { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--forest);
+     border-bottom: 1px solid var(--border); padding-bottom: 6px; margin: 4px 0 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; margin-bottom: 30px; }
+a.card { display: flex; flex-direction: column; gap: 8px; background: var(--card); border: 1px solid var(--border);
+         border-radius: 10px; padding: 18px; text-decoration: none; color: inherit;
+         transition: border-color .15s, box-shadow .15s, transform .15s; }
+a.card:hover, a.card:focus-visible { border-color: var(--teal); box-shadow: 0 4px 14px rgba(0,36,0,.08); transform: translateY(-1px); outline: none; }
+.top { display: flex; align-items: center; gap: 10px; }
+.icon { font-size: 22px; line-height: 1; width: 38px; height: 38px; display: grid; place-items: center;
+        background: #eef3ea; border-radius: 9px; flex-shrink: 0; }
+.name { font-size: 16px; font-weight: 650; color: var(--evergreen); }
+.desc { font-size: 13.5px; color: var(--muted); line-height: 1.5; flex: 1; }
+.url { font-size: 12px; color: var(--teal); font-weight: 600; }
+.badge { display: inline-block; font-size: 10.5px; font-weight: 600; color: var(--amber); background: #fbf3e0;
+         border: 1px solid #e6cf8f; border-radius: 4px; padding: 1px 6px; margin-left: 6px; vertical-align: 2px; }
+.note { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+.note a { color: var(--teal); }
+footer { text-align: center; font-size: 12px; color: var(--muted); padding: 0 16px 30px; }
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="wrap">
+    <div class="eyebrow">McKain Research Group &middot; Future Ecologies Lab &middot; UA Herbarium</div>
+    <h1>Lab Tools</h1>
+    <p class="sub">Everything we use to run the lab, in one place. Bookmark this page.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2>Daily lab work</h2>
+  <div class="grid">
+    <a class="card" href="https://mckainlab.org/LabChores/">
+      <div class="top"><span class="icon">🧹</span><span class="name">Lab Chores</span></div>
+      <p class="desc">This week's chore list. See what you're assigned and check jobs off as you do them.</p>
+      <span class="url">mckainlab.org/LabChores →</span>
+    </a>
+    <a class="card" href="https://mckainlab.org/MeasurementLogs/">
+      <div class="top"><span class="icon">🌡️</span><span class="name">Measurement Logs</span></div>
+      <p class="desc">Log freezer temperatures, room humidity and temperature, pest traps, and HPC checks.</p>
+      <span class="url">mckainlab.org/MeasurementLogs →</span>
+    </a>
+  </div>
+
+  <h2>Samples and supplies</h2>
+  <div class="grid">
+    <a class="card" href="https://mckainlab.org/Muninn/">
+      <div class="top"><span class="icon">🧬</span><span class="name">Muninn<span class="badge">Setup in progress</span></span></div>
+      <p class="desc">Our tracking system for every sample in the lab, from collection through isolation, QC, library prep, sequencing, and analysis.</p>
+      <span class="url">mckainlab.org/Muninn →</span>
+    </a>
+    <a class="card" href="https://mckainlab.org/InventoryManagement/">
+      <div class="top"><span class="icon">📦</span><span class="name">Ordering &amp; Inventory</span></div>
+      <p class="desc">Request supplies and reagents, and follow your orders from request to delivery.</p>
+      <span class="url">mckainlab.org/InventoryManagement →</span>
+    </a>
+  </div>
+
+  <h2>For Michael</h2>
+  <div class="grid">
+    <a class="card" href="https://mckainlab.org/WeeklyNews/">
+      <div class="top"><span class="icon">📰</span><span class="name">Weekly News editor</span></div>
+      <p class="desc">Write and send the weekly lab newsletter. Password protected.</p>
+      <span class="url">mckainlab.org/WeeklyNews →</span>
+    </a>
+  </div>
+
+  <p class="note">Can't get into something, or a link is broken? Let Michael know.</p>
+</main>
+
+<footer><a href="https://mckainlab.org/" style="color:inherit">mckainlab.org</a></footer>
+</body>
+</html>
